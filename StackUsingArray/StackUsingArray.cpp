@@ -72,7 +72,8 @@ int main() {
 			case '1': {
 				int data;
 				cout << "Masukkan data" << endl;
-				cin >> data;
+				cin >> data; 
+				obj.push(data);
 				break;
 			}
 			case '2' :
