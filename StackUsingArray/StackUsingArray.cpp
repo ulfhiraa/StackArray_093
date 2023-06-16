@@ -77,6 +77,10 @@ int main() {
 				break;
 			}
 			case '2' :
+				if (obj.empty()) {
+					cout << "\nStack is empty." << endl;
+					break;
+				}
 				obj.pop();
 				break;
 			case '3' :
@@ -91,6 +95,6 @@ int main() {
 		}
 		catch (exception& e) {
 			cout << "Check for the values entered." << endl;
-		}
-	}
+		} 
+	} 
 } 
