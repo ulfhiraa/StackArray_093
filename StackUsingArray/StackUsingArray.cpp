@@ -56,8 +56,8 @@ public:
 
 int main() {
 	stackArray obj;
-	while (true) {
-		try {
+	while (true) {  
+		try { 
 			cout << endl;
 			cout << "\nStack Array" << endl;
 			cout << "1. Push" << endl;
