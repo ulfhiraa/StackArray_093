@@ -53,3 +53,43 @@ public:
 		}
 	}
 };
+
+int main() {
+	stackArray obj;
+	while (true) {
+		try {
+			cout << endl;
+			cout << "\nStack Array" << endl;
+			cout << "1. Push" << endl;
+			cout << "2. Pop" << endl;
+			cout << "3. Display" << endl;
+			cout << "4. Exit" << endl;
+			cout << "Masukkan Pilihan : ";
+			char ch;
+			cin >> ch;
+
+			switch (ch) {
+			case '1': {
+				int data;
+				cout << "Masukkan data" << endl;
+				cin >> data;
+				break;
+			}
+			case '2' :
+				obj.pop();
+				break;
+			case '3' :
+				obj.display();
+				break;
+			case '4' :
+				return 0;
+			default :
+				cout << "\nInvalid Option" << endl;
+				break;
+			}
+		}
+		catch (exception& e) {
+			cout << "Check for the values entered." << endl;
+		}
+	}
+}
