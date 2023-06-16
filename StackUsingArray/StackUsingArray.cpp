@@ -49,7 +49,7 @@ public:
 		else {
 			for (int tmp = top; tmp >= 0; tmp--) {
 				cout << stack_array[tmp] << endl;
-			}
+			} 
 		}
 	}
 };
